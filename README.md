@@ -16,12 +16,12 @@ This monitor is better used with a browser addon/extension that lets you auto-re
 ## Extra features
 
 ### Alarm
-Line 220 (or use CTRL+F and search for `threshold`) lets you set an alarm in case you total hashrate (15 minutes) gets lower than the value. The alarm sounds every 5 seconds. The default is 0. This works well only if you setup an auto-refresh addon/extension on your browser.
+Line 220 (or use CTRL+F and search for `threshold`) lets you set an alarm in case you total hashrate (15 minutes) gets lower than the defined value. The alarm plays every 5 seconds. The default is 0. This works well only if you setup an auto-refresh addon/extension on your browser.
 
 ### Aggregated hashrate for cards with double threads (e.g. AMD Radeon Vega)
-If you use AMD Radeon Vega or any other card that shows up in two different threads, then you have the option to show them aggregated as the second screenshot below shows. I personally like seeing each of my cards together instead of separated threads, so you may also find this useful.
+If you use AMD Radeon Vega or any other card that shows up in two different threads, then you have the option to show them aggregated as the second screenshot below shows. I personally like seeing each card in only one row instead of two rows (one pert hread), so you may also find this useful.
 
-The aggregated view **is not the default**. If you wan't to change it, open the HTML file, go to line 192 (or use CTRL+F and search for `GPU threads`) and read the comment explaining how to edit the file. You will have to "comment" or delete the `while` considering one row per thread and uncomment the next one doing the aggregation.
+The aggregated view **is not the default**. If you want to change it, open the HTML file, go to line 192 (or use CTRL+F and search for `GPU threads`) and read the comment explaining how to edit the file. You will have to *"comment"* or delete the `while` considering one row per thread and uncomment the next one doing the aggregation.
 
 ### Images
 
