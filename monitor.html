@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <title>XMRig Monitor</title>
+    <link rel="icon" href="media/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="media/monitor.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <script src="variables.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="monitor">
+        <div class="version">Algorithm: <span id="algo"></span> | Worker: <span id="worker_id"></span></div>
+        <div class="header">XMRig <b><span id="version"></span></b> <span id="ua" class="smaller"></span></div>
+        <h4>Hashrate by thread</h4>
+        <div class="data">
+            <table>
+                <tbody id="gpu">
+                    <th>Thread ID</th>
+                    <th>10s</th>
+                    <th>60s</th>
+                    <th>15m</th>
+                </tbody>
+            </table>
+        </div>
+        <h4>Results</h4>
+        <div class="data">
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Difficulty:</th>
+                        <td id="diff_current"></td>
+                    </tr>
+                    <tr>
+                        <th>Good results:</th>
+                        <td id="results"></td>
+                    </tr>
+                    <tr>
+                        <th>Average time:</th>
+                        <td id="avg_time"></td>
+                    </tr>
+                    <tr>
+                        <th>Error log:</th>
+                        <td id="error_log_r"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h4>Connection</h4>
+        <div class="data">
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Pool:</th>
+                        <td id="pool"></td>
+                    </tr>
+                    <tr>
+                        <th>Uptime:</th>
+                        <td id="uptime"></td>
+                    </tr>
+                    <tr>
+                        <th>Ping:</th>
+                        <td id="ping"></td>
+                    </tr>
+                    <tr>
+                        <th>Failures:</th>
+                        <td id="failures"></td>
+                    </tr>
+                    <tr>
+                        <th>Error log:</th>
+                        <td id="error_log_c"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="footer">
+            Connected at: <span id="api"></span>
+            <br /> Hashrate alarm (15m) set to: <span id="alarm"></span>
+            <br /> Version: 0.12
+        </div>
+    </div>
+    <script src="functions.js"></script>
+</body>
+
+</html>

@@ -1,38 +1,39 @@
 # XMRig-Monitor
 HTML XMRig Monitor
 
-This is a very simple monitor for XMRig mining software. It was only tested with GPU AMD mining, but I believe it should work with any setup. If it's not the case, feel free to create an issue and please share your API json (at least partially) so I can make the needed changes.
+Extremely simple to use monitor for XMRig mining software. It also has a proxy monitor (`monitor-proxy.html`).
 
-This monitor is better used with a browser addon/extension that lets you auto-refresh a tab. I personally refresh every minute.
+This monitor is better used with a browser addon/extension that lets you auto-refresh a tab. I personally refresh every minute. 
 
-## Setup, step by step
+## Screenshots
 
-1. Download the repository. It's only one HTML file with an audio file for alerts and the favicon.
-2. Open the `monitor.html` file in your favorite text editor.
-3. Navigate to the line 166 (or use CTRL+F and search for `getJSON`)
-4. Change the URL to your own API endpoint.
-5. You're done!
 
-## Extra features
+## Setup
+
+1. Download the repository.
+2. Open the `variables.js` file.
+3. Change the URL to your own API endpoint.
+4. You're done!
+
+## Optional features
+You can use these features by changing the necessary values in `variables.js`.
 
 ### Alarm
-Line 220 (or use CTRL+F and search for `threshold`) lets you set an alarm in case you total hashrate (15 minutes) gets lower than the defined value. The alarm plays every 5 seconds. The default is 0. This works well only if you setup an auto-refresh addon/extension on your browser.
+You can setup a hashrate threshold for your monitor by changing the variable `alarmThreshold`. If the 15-minutes average (60-minutes average for proxy) goes below the threshold, the tab will try to play a sound and show a JavaScript alert. Works pretty well with an auto-refresh addon/extension.
 
-### Aggregated hashrate for cards with double threads (e.g. AMD Radeon Vega)
-If you use AMD Radeon Vega or any other card that shows up in two different threads, then you have the option to show them aggregated as the second screenshot below shows. I personally like seeing each card in only one row instead of two rows (one pert hread), so you may also find this useful.
+### Aggregated hashrate for cards with two threads (e.g. AMD Radeon Vega)
+You can setup the monitor to show two threads in a single row, instead of showing one row per thread. This feature is useful for people running GPUs with two threads. See screenshots above for an example.
 
-The aggregated view **is not the default**. If you want to change it, open the HTML file, go to line 192 (or use CTRL+F and search for `GPU threads`) and read the comment explaining how to edit the file. You will have to *"comment"* or delete the `while` considering one row per thread and uncomment the next one doing the aggregation.
-
-### Images
-
-First: normal one showing one row per thread.
-
-Second: showing two threads per row (useful for AMD Radeon Vega).
-
-![xmrig-monitor-normal](https://i.imgur.com/7QkMQnI.png)
-![xmrig-monitor-coupled](https://i.imgur.com/ZkyE2kJ.png)
+![xmrig-monitor](https://i.imgur.com/oTGgTVj.jpg= 400x670)
+*XMRig Monitor*
+![xmrig-monitor-agg](https://i.imgur.com/MKwZMir.jpg =400x547)
+*XMRig Monitor with aggregated threads*
+![xmrig-monitor-agg](https://i.imgur.com/Do5E2q0.jpg =400x379)
+*XMRig Monitor Proxy Version*
+![xmrig-monitor-alert](https://i.imgur.com/jDvTcIm.jpg =400x563)
+*XMRig Monitor alert example*
 
 # Donate
-If this simple monitor helped you any way, consider buying me a beer and a pepperoni pizza!
+If this simple monitor helped you any way, consider tipping me beer & pizza change!
 
 XMR: 84tUVgLs3u7Ki9rfogHZJkCqCgMApCpmJaDr5sfqYiqtePDnzr5ALtuGy2T3JR4W8AgnAp9oyVLuH4TW5nhPSRX5Pf7eLz3

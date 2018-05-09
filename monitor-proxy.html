@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <title>XMRig Monitor (Proxy)</title>
+    <link rel="icon" href="media/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="media/monitor.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <script src="variables.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="monitor">
+        <div class="version">id: <span id="id"></span> | Proxy worker: <span id="worker_id"></span></div>
+        <div class="header">XMRig <b><span id="version"></span></b> <span id="ua" class="smaller"></span></div>
+        <h4>Hashrate totals</h4>
+        <div class="data">
+            <table>
+                <tbody>
+                    <th>10m</th>
+                    <th>60m</th>
+                    <th>12h</th>
+                    <th>24h</th>
+                    <tr>
+                        <td id="tot10"></td>
+                        <td id="tot60"></td>
+                        <td id="tot12"></td>
+                        <td id="tot24"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h4>Results</h4>
+        <div class="data">
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Good results:</th>
+                        <td id="results"></td>
+                    </tr>
+                    <tr>
+                        <th>Average time:</th>
+                        <td id="avg_time"></td>
+                    </tr>
+                    <tr>
+                        <th>Error log:</th>
+                        <td id="error_log_r"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h4>Proxy Connection</h4>
+        <div class="data">
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Miners:</th>
+                        <td id="miners"></td>
+                    </tr>
+                    <tr>
+                        <th>Uptime:</th>
+                        <td id="uptime"></td>
+                    </tr>
+                    <tr>
+                        <th>Latency:</th>
+                        <td id="ping"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="footer">
+            Connected at: <span id="api"></span>
+            <br /> Hashrate alarm (60m) set to: <span id="alarm"></span>
+            <br /> Version: 0.12
+        </div>
+    </div>
+    <script src="functions-proxy.js"></script>
+</body>
+
+</html>
