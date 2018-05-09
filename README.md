@@ -1,12 +1,8 @@
 # XMRig-Monitor
-HTML XMRig Monitor
 
-Extremely simple to use monitor for XMRig mining software. It also has a proxy monitor (`monitor-proxy.html`).
+Extremely simple to use, HTML monitor for XMRig mining software. It also has a proxy monitor (`monitor-proxy.html`). Please check screenshots at the end of the page.
 
 This monitor is better used with a browser addon/extension that lets you auto-refresh a tab. I personally refresh every minute. 
-
-## Screenshots
-
 
 ## Setup
 
@@ -24,14 +20,10 @@ You can setup a hashrate threshold for your monitor by changing the variable `al
 ### Aggregated hashrate for cards with two threads (e.g. AMD Radeon Vega)
 You can setup the monitor to show two threads in a single row, instead of showing one row per thread. This feature is useful for people running GPUs with two threads. See screenshots above for an example.
 
-![xmrig-monitor](https://i.imgur.com/oTGgTVj.jpg= 400x670)
-*XMRig Monitor*
-![xmrig-monitor-agg](https://i.imgur.com/MKwZMir.jpg =400x547)
-*XMRig Monitor with aggregated threads*
-![xmrig-monitor-agg](https://i.imgur.com/Do5E2q0.jpg =400x379)
-*XMRig Monitor Proxy Version*
-![xmrig-monitor-alert](https://i.imgur.com/jDvTcIm.jpg =400x563)
-*XMRig Monitor alert example*
+## Screenshots
+
+<img src="https://i.imgur.com/oTGgTVj.jpg" height="670" width="400"> <img src="https://i.imgur.com/MKwZMir.jpg" height="547" width="400">
+<img src="https://i.imgur.com/Do5E2q0.jpg" height="379" width="400"> <img src="https://i.imgur.com/jDvTcIm.jpg" height="563" width="400">
 
 # Donate
 If this simple monitor helped you any way, consider tipping me beer & pizza change!
