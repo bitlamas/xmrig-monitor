@@ -18,7 +18,7 @@ You can use these features by changing the necessary values in `variables.js`.
 You can setup a hashrate threshold for your monitor by changing the variable `alarmThreshold`. If the 15-minutes average (60-minutes average for proxy) goes below the threshold, the tab will try to play a sound and show a JavaScript alert. Works pretty well with an auto-refresh addon/extension.
 
 ### Aggregated hashrate for cards with two threads (e.g. AMD Radeon Vega)
-You can setup the monitor to show two threads in a single row, instead of showing one row per thread. This feature is useful for people running GPUs with two threads. See screenshots above for an example.
+You can setup the monitor to show two threads in a single row, instead of showing one row per thread, by changing the variable `aggregateThreads` to `1`. This feature is useful for people running GPUs with two threads. See screenshots below for an example.
 
 ## Screenshots
 
