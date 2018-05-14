@@ -22,7 +22,7 @@ You can setup the monitor to show two threads in a single row, instead of showin
 
 ## Screenshots
 
-<img src="https://i.imgur.com/eg4Avpp.jpg" height="280" width="476"> <img src="https://i.imgur.com/iXAfRlx.jpg" height="280" width="476"> <img src="https://i.imgur.com/tfD5KzJ.jpg" height="280" width="476"> 
+<img src="https://i.imgur.com/eg4Avpp.jpg" height="476" width="280"> <img src="https://i.imgur.com/iXAfRlx.jpg" height="476" width="280"> <img src="https://i.imgur.com/tfD5KzJ.jpg" height="476" width="280"> 
 
 # Donate
 If this simple monitor helped you any way, consider tipping me some pizza change!
