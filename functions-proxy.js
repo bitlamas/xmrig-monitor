@@ -31,13 +31,21 @@ $.getJSON(endpointAPI, function(data) {
 // footer information
 document.getElementById("api").innerHTML = endpointAPI;
 document.getElementById("alarm").innerHTML = alarmThreshold.toLocaleString('en-GB');
+document.getElementById("timer").innerHTML = timer + ' seconds';
 
 // alert for hashrate drop
 var audio = new Audio('media/hell.wav');
 setInterval(function() {
-    var tot60 = (document.getElementById("tot60").innerText).replace(/\D/g, '')
+    var tot60 = (document.getElementById("tot60").innerText).replace(/\D/g, '');
     if (tot60 < alarmThreshold) {
         audio.play();
-        alert('Last 60 minutes hashrate is ' + tot60 + '.\nIt is ' + (alarmThreshold - tot60).toFixed(0) + ' below threshold.');
     }
-}, 5000);
+}, 3000);
+
+// create meta tag for auto-refresh
+if (timer > 0) {
+	var meta = document.createElement('meta');
+	meta.httpEquiv = "refresh";
+	meta.content = timer;
+	document.getElementsByTagName('head')[0].appendChild(meta);
+}
