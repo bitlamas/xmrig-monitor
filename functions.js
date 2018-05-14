@@ -44,13 +44,21 @@ $.getJSON(endpointAPI, function(data) {
 // footer information
 document.getElementById("api").innerHTML = endpointAPI;
 document.getElementById("alarm").innerHTML = alarmThreshold.toLocaleString('en-GB');
+document.getElementById("timer").innerHTML = timer + ' seconds';
 
 // alert for hashrate drop
 var audio = new Audio('media/hell.wav');
 setInterval(function() {
-    var tot10 = Number(document.getElementById("tot900").innerText).toFixed(0);
+    var tot10 = Number(document.getElementById("tot10").innerText).toFixed(0);
     if (tot10 < alarmThreshold) {
         audio.play();
-        alert('Current hashrate is ' + tot10 + '.\nIt is ' + (alarmThreshold - tot10).toFixed(0) + ' below threshold.');
     }
-}, 5000);
+}, 3000);
+
+// create meta tag for auto-refresh
+if (timer > 0) {
+	var meta = document.createElement('meta');
+	meta.httpEquiv = "refresh";
+	meta.content = timer;
+	document.getElementsByTagName('head')[0].appendChild(meta);
+}
