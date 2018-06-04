@@ -27,4 +27,4 @@ You can setup the monitor to show two threads in a single row, instead of showin
 # Donate
 If this simple monitor helped you any way, consider tipping me some pizza change!
 
-XMR: 84tUVgLs3u7Ki9rfogHZJkCqCgMApCpmJaDr5sfqYiqtePDnzr5ALtuGy2T3JR4W8AgnAp9oyVLuH4TW5nhPSRX5Pf7eLz3
+XMR: 8BTcfC6b3dGMvfMwaVub8yJbr4tAC6ggHGMv6yJjy9eC8jbApCz15x66XpPrhBEpV85hyeHMFeCYpdWFv5WBNc7t4YM9k8Z
